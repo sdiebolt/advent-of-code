@@ -40,7 +40,7 @@ fn main() {
         .unwrap_or_else(|_| panic!("Failed to read input file: {}", input_path));
 
     match year.as_str() {
-        "2025" => run_year!(year2025, day, &input, [day01]),
+        "2025" => run_year!(year2025, day, &input, [day01, day02]),
         _ => {
             eprintln!("Year {} not implemented", year);
             std::process::exit(1);
